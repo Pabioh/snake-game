@@ -68,7 +68,7 @@ void draw() //  Function to draw the game screen
         }
         cout << endl;
     }
-    // Draw the bottom border
+    // Draw the bottom border of the game screen
     for (int i = 0; i < WIDTH + 2; i++)
         cout << "#";
     cout << endl;
