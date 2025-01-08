@@ -23,8 +23,8 @@ bool gameOver = false;
 
 void setup()
 {
-    snake = {{WIDTH / 2, HEIGHT / 2}};
-    food = {rand() % WIDTH, rand() % HEIGHT};
+    snake = {{WIDTH / 2, HEIGHT / 2}};        // Initializes the snake's starting position
+    food = {rand() % WIDTH, rand() % HEIGHT}; // Randomly places the food on the grid
     score = 0;
     direction = 'd';
     gameOver = false;
