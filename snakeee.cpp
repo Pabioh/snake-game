@@ -77,15 +77,19 @@ void draw() //  Function to draw the game screen
     cout << "Score: " << score << endl;
 }
 
-void input()
+void input() // Function to handle user input for controlling the snake's direction
 {
-    if (_kbhit())
+    if (_kbhit()) // Check if a key has been pressed
     {
-        char key = _getch();
-        if ((key == 'w' && direction != 's') || (key == 's' && direction != 'w') ||
-            (key == 'a' && direction != 'd') || (key == 'd' && direction != 'a'))
+        char key = _getch(); // Read the pressed key without waiting for the Enter key
+
+        // Update the direction based on the key pressed, ensuring the snake cannot reverse direction
+        if ((key == 'w' && direction != 's') || // 'w' for moving up, not allowed if currently moving down ('s')
+            (key == 's' && direction != 'w') || // 's' for moving down, not allowed if currently moving up ('w')
+            (key == 'a' && direction != 'd') || // 'a' for moving left, not allowed if currently moving right ('d')
+            (key == 'd' && direction != 'a'))   // 'd' for moving right, not allowed if currently moving left ('a')
         {
-            direction = key;
+            direction = key; // Update the snake's direction
         }
     }
 }
