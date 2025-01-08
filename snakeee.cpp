@@ -30,17 +30,18 @@ void setup()
     gameOver = false;
 }
 
-void draw()
+void draw() //  Function to draw the game screen
 {
     system("cls");
-    for (int i = 0; i < WIDTH + 2; i++)
+    for (int i = 0; i < WIDTH + 2; i++) // Draw the top border of the game screen
         cout << "#";
     cout << endl;
 
+    //  Loop through each row (height of the game screen)
     for (int i = 0; i < HEIGHT; i++)
-    {
+    { // Loop through each column (width of the game screen)
         for (int j = 0; j < WIDTH; j++)
-        {
+        { // Print left border "#" at the start of each row
             if (j == 0)
                 cout << "#";
 
