@@ -95,7 +95,7 @@ void input() // Function to handle user input for controlling the snake's direct
 }
 
 void logic()
-{
+{ // accepting input of navigation
     Point newHead = snake.front();
     if (direction == 'w')
         newHead.y--;
