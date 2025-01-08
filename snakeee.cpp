@@ -17,7 +17,7 @@ struct Point
 // the fruit design in the game
 vector<Point> snake;
 Point food;
-int score = 0;
+int score = 0;        // to read the control for input navigation
 char direction = 'd'; // 'w' - up, 's' - down, 'a' - left, 'd' - right
 bool gameOver = false;
 
