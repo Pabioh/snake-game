@@ -139,7 +139,7 @@ int main()
     srand(time(0));
     setup();
 
-    while (!gameOver)
+    while (!gameOver) // black out screen after snake death
     {
         draw();
         input();
