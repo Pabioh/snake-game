@@ -14,7 +14,7 @@ struct Point
 {
     int x, y;
 };
-
+// the fruit design in the game
 vector<Point> snake;
 Point food;
 int score = 0;
