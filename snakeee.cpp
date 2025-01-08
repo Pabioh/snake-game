@@ -130,7 +130,7 @@ void logic()
     }
     else
     {
-        snake.pop_back();
+        snake.pop_back(); //
     }
 }
 
@@ -147,5 +147,5 @@ int main()
         Sleep(100);
     }
 
-    cout << "Game Over! Your score: " << score << endl;
+    cout << "Game Over! Your score: " << score << endl; // show the game over score
     return 0;
