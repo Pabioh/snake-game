@@ -114,7 +114,7 @@ void logic()
 
     for (const auto &s : snake)
     {
-        if (newHead.x == s.x && newHead.y == s.y) //
+        if (newHead.x == s.x && newHead.y == s.y) // the head of the snake
         {
             gameOver = true; // kuona gameover screen
             return;
