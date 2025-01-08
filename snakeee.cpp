@@ -50,7 +50,7 @@ void draw() //  Function to draw the game screen
             {
                 if (s.x == j && s.y == i) // food to appear at random
                 {
-                    cout << "O";
+                    cout << "O"; // fruit to vanish
                     printed = true;
                     break;
                 }
