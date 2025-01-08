@@ -25,8 +25,8 @@ void setup()
 {
     snake = {{WIDTH / 2, HEIGHT / 2}};        // Initializes the snake's starting position
     food = {rand() % WIDTH, rand() % HEIGHT}; // Randomly places the food on the grid
-    score = 0;
-    direction = 'd';
+    score = 0;                                // Initializes the player's score ianze zeroo
+    direction = 'd';                          // Sets the initial movement direction of the snake
     gameOver = false;
 }
 
