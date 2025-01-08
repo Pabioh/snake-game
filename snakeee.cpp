@@ -48,7 +48,7 @@ void draw() //  Function to draw the game screen
             bool printed = false;
             for (const auto &s : snake)
             {
-                if (s.x == j && s.y == i)
+                if (s.x == j && s.y == i) // food to appear at random
                 {
                     cout << "O";
                     printed = true;
