@@ -130,7 +130,7 @@ void logic()
     }
     else
     {
-        snake.pop_back(); //
+        snake.pop_back(); // snake to return after reconcile
     }
 }
 
